@@ -1,0 +1,203 @@
+/* ESTILOS GENERALES */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff7fb;
+    color: #333;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+/* BARRA DE NAVEGACIÓN */
+
+.navbar-custom {
+    background-color: #8e44ad;
+}
+
+.navbar-custom .navbar-brand {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.navbar-custom .nav-link {
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #f8d7ff;
+    transform: scale(1.05);
+}
+
+
+/* PORTADA */
+
+.hero {
+    background: linear-gradient(135deg, #c084fc, #e879b9);
+    color: white;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+
+/* TITULOS */
+
+.section-title {
+    color: #8e44ad;
+    font-weight: bold;
+    border-bottom: 3px solid #e879b9;
+    padding-bottom: 10px;
+}
+
+
+/* TARJETAS */
+
+.hobby-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hobby-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(142, 68, 173, 0.25);
+}
+
+.hobby-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+
+/* CARRUSEL */
+
+.carousel-custom {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-custom img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+/* PASATIEMPOS */
+
+.hobby-box {
+    background-color: #f3e5f5;
+    border-radius: 15px;
+    padding: 25px;
+    height: 100%;
+}
+
+.hobby-box h3 {
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+
+/* COMIDA */
+
+.food-box {
+    background-color: white;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 15px;
+    height: 100%;
+    border: 2px solid #f3d5ef;
+    transition: 0.3s;
+}
+
+.food-box:hover {
+    background-color: #fce4ec;
+    transform: scale(1.03);
+}
+
+.food-box h3 {
+    color: #8e44ad;
+    font-size: 1.3rem;
+}
+
+
+/* TABLA */
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead th {
+    text-align: center;
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+
+/* BOTONES */
+
+.btn {
+    border-radius: 25px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #8e44ad;
+    color: white;
+    padding: 30px 15px;
+    margin-top: 50px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .carousel-custom img {
+        height: 250px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+
+}

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Página de Belem | Mis gustos y pasatiempos</title>
+
+    <meta name="description"
+          content="Página personal de Belem sobre comida, música, series y pasatiempos.">
+
+    <meta name="author" content="Lucero Belem Betancourt Cruz">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#inicio">
+                Página de Belem
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gustos">Mis gustos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pasatiempos">Pasatiempos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comidas">Comida favorita</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planes">Mis planes</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- INICIO -->
+    <header id="inicio" class="hero text-center">
+
+        <div class="container">
+
+            <h1>¡Bienvenido a mi página!</h1>
+
+            <p class="lead">
+                Conoce un poco sobre mis gustos, pasatiempos,
+                comida favorita y música.
+            </p>
+
+            <a href="#gustos" class="btn btn-light btn-lg">
+                Conocer más
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ALERTA -->
+    <div class="container mt-4">
+
+        <div class="alert alert-info text-center" role="alert">
+            ¡Hola! Soy Belem y aquí comparto algunas de las cosas que más me gustan.
+        </div>
+
+    </div>
+
+
+    <!-- PRESENTACIÓN -->
+    <section class="container my-5" id="gustos">
+
+        <h2 class="section-title text-center mb-4">
+            Acerca de mis gustos
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- COMIDA -->
+            <div class="col-md-4">
+
+                <div class="card hobby-card h-100">
+
+                    <img src="img/comida.jpg"
+                         class="card-img-top"
+                         alt="Comida favorita de Belem">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">Comida</h3>
+
+                        <p class="card-text">
+                            Me encantan los pambazos, el mole rojo,
+                            los camarones y los tacos de tinga.
+                        </p>
+
+                        <button class="btn btn-primary"
+                                data-bs-toggle="popover"
+                                data-bs-title="Mis comidas favoritas"
+                                data-bs-content="Mole rojo, pambazos de pollo, camarones y tacos de tinga.">
+
+                            Ver mis favoritos
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERIES -->
+            <div class="col-md-4">
+
+                <div class="card hobby-card h-100">
+
+                    <img src="img/series.jpg"
+                         class="card-img-top"
+                         alt="Series de televisión">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">Series</h3>
+
+                        <p class="card-text">
+                            Me gusta ver series acostada en mi cama.
+                            Mi favorita es La Primera Vez.
+                        </p>
+
+                        <button class="btn btn-success"
+                                data-bs-toggle="tooltip"
+                                data-bs-title="Una de mis actividades favoritas para descansar">
+
+                            Mi pasatiempo
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MÚSICA -->
+            <div class="col-md-4">
+
+                <div class="card hobby-card h-100">
+
+                    <img src="img/musica.jpg"
+                         class="card-img-top"
+                         alt="Música favorita">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">Música</h3>
+
+                        <p class="card-text">
+                            Me gusta escuchar música y mi cantante
+                            favorito es Junior H.
+                        </p>
+
+                        <button class="btn btn-dark"
+                                data-bs-toggle="popover"
+                                data-bs-title="Mi cantante favorito"
+                                data-bs-content="Junior H es uno de mis artistas favoritos y disfruto escuchar su música.">
+
+                            Más información
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CARRUSEL -->
+    <section class="container my-5">
+
+        <h2 class="section-title text-center mb-4">
+            Algunas de las cosas que me gustan
+        </h2>
+
+        <div id="carrusel"
+             class="carousel slide carousel-custom"
+             data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+
+                <button type="button"
+                        data-bs-target="#carrusel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-label="Comida"></button>
+
+                <button type="button"
+                        data-bs-target="#carrusel"
+                        data-bs-slide-to="1"
+                        aria-label="Series"></button>
+
+                <button type="button"
+                        data-bs-target="#carrusel"
+                        data-bs-slide-to="2"
+                        aria-label="Música"></button>
+
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+
+                    <img src="img/comida.jpg"
+                         class="d-block w-100"
+                         alt="Comida">
+
+                    <div class="carousel-caption">
+                        <h3>Comida deliciosa</h3>
+                        <p>Una de mis cosas favoritas.</p>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="img/series.jpg"
+                         class="d-block w-100"
+                         alt="Series">
+
+                    <div class="carousel-caption">
+                        <h3>Ver series</h3>
+                        <p>Mi momento para descansar.</p>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="img/musica.jpg"
+                         class="d-block w-100"
+                         alt="Música">
+
+                    <div class="carousel-caption">
+                        <h3>Escuchar música</h3>
+                        <p>Siempre disfruto mis canciones favoritas.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carrusel"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carrusel"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PASATIEMPOS -->
+    <section id="pasatiempos" class="container my-5">
+
+        <h2 class="section-title text-center mb-4">
+            Cosas que hago en mi tiempo libre
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div class="list-group">
+
+                    <div class="list-group-item">
+                        📺 Ver series
+                    </div>
+
+                    <div class="list-group-item">
+                        😴 Dormir
+                    </div>
+
+                    <div class="list-group-item">
+                        🍔 Comer algo rico
+                    </div>
+
+                    <div class="list-group-item">
+                        🐱 Jugar con mi gato
+                    </div>
+
+                    <div class="list-group-item">
+                        🎵 Escuchar música
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 mt-3 mt-md-0">
+
+                <div class="hobby-box">
+
+                    <h3>Mi actividad favorita</h3>
+
+                    <p>
+                        Mi pasatiempo favorito es dormir.
+                        Me gusta descansar, estar cómoda y disfrutar
+                        de mi tiempo libre.
+                    </p>
+
+                    <button class="btn btn-outline-primary"
+                            id="btnMensaje">
+
+                        Haz clic aquí
+
+                    </button>
+
+                    <p id="mensaje" class="mt-3 fw-bold"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMIDAS -->
+    <section id="comidas" class="container my-5">
+
+        <h2 class="section-title text-center mb-4">
+            Mis comidas favoritas
+        </h2>
+
+        <div class="row g-3">
+
+            <div class="col-md-3">
+
+                <div class="food-box">
+                    <h3>🍲 Mole rojo</h3>
+                    <p>Una de mis comidas favoritas.</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="food-box">
+                    <h3>🥙 Pambazos</h3>
+                    <p>Me encantan los pambazos de pollo.</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="food-box">
+                    <h3>🍤 Camarones</h3>
+                    <p>Disfruto mucho comer camarones.</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="food-box">
+                    <h3>🌮 Tinga</h3>
+                    <p>También me gustan los tacos de tinga.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TABLA DE PLANES -->
+    <section id="planes" class="container my-5">
+
+        <h2 class="section-title text-center mb-4">
+            Mis planes fuera de la escuela
+        </h2>
+
+        <div class="table-responsive">
+
+            <table class="table table-striped table-hover table-bordered">
+
+                <thead class="table-primary">
+
+                    <tr>
+                        <th>Tiempo libre</th>
+                        <th>Actividad</th>
+                        <th>Mis planes</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>2 horas</td>
+                        <td>Comer</td>
+                        <td>Servir mi plato y disfrutar la comida.</td>
+                    </tr>
+
+                    <tr>
+                        <td>3 horas</td>
+                        <td>Ver series</td>
+                        <td>Acostarme y disfrutar mis series favoritas.</td>
+                    </tr>
+
+                    <tr>
+                        <td>2 horas</td>
+                        <td>Hacer tarea</td>
+                        <td>Utilizar mi computadora y teléfono.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tiempo libre</td>
+                        <td>Dormir</td>
+                        <td>Descansar y recuperar energía.</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer text-center">
+
+        <div class="container">
+
+            <p class="mb-1">
+                Página personal de Belem
+            </p>
+
+            <p class="mb-0">
+                © 2026 Todos los derechos reservados.
+            </p>
+
+            <a href="#inicio" class="btn btn-outline-light btn-sm mt-3">
+                Volver al inicio ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="app.js"></script>
+
+</body>
+</html>
